@@ -13,7 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
 /*
 
@@ -81,7 +81,7 @@ html {
 
 :root {
   --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Eczar", serif;
+  --heading-typeface: "Orbitron", sans-serif;
   --project-title-typeface: "Eczar", serif;
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
@@ -105,7 +105,7 @@ html {
   --hover-color: #111;
   --visited-color: #5200ff;
   --project-title-color: #5200ff;
-  --project-sidebar-background-color: orangered;
+  --project-sidebar-background-color: rgb(130, 130, 130);
   --project-sidebar-text-color: white;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
@@ -606,7 +606,12 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
+    url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -726,9 +731,15 @@ a:active {
     font-size: 1.625rem;
   }
 
-  .logo {
-    width: 5rem;
-    /* TODO: Adjust the width of the logo on large devices here. */
+  .wordmark {
+    min-width: 2rem;
+    fill: #222222;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  .wordmark:hover {
+    fill: #ffce99;
   }
 
   .hero {
