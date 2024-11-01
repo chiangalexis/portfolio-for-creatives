@@ -111,9 +111,9 @@ html {
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
   --text-selection-background-color: #5200ff;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
+  --linear-gradient-color-1: transparent;
+  --linear-gradient-color-2: transparent;
+  --linear-gradient-color-3: transparent;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -326,8 +326,9 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 3rem;
   align-items: flex-start;
+  min-height: 30vh;
 }
 
 .logo {
@@ -339,10 +340,10 @@ a:active {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: end;
   padding: 2rem 4rem;
-  text-align: center;
+  text-align: end;
 }
 
 .hero-icon {
@@ -552,16 +553,15 @@ a:active {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
+.project-video {
+  max-width: auto;
+  height: auto;
 }
 
 .text-section {
