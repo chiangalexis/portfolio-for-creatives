@@ -326,9 +326,9 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 1rem;
   align-items: flex-start;
-  min-height: 30vh;
+  min-height: 10vh;
 }
 
 .logo {
