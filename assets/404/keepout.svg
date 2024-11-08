@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 514.99 506.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        font-family: KodeMono-SemiBold, 'Kode Mono';
+        font-size: 24px;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <polygon class="cls-1" points="2.82 476.5 53.82 49.5 124.82 2.5 358.86 2.5 419.82 45.5 481.53 476.5 2.82 476.5"/>
+      <rect class="cls-1" x="-24.18" y="234.5" width="498" height="60" transform="translate(-121.18 236.44) rotate(-45)"/>
+      <text class="cls-2" transform="translate(103.83 395.49) rotate(-45)"><tspan x="0" y="0">KEEP OUT KEEP OUT KEEP OUT </tspan></text>
+      <rect class="cls-1" x="-43.86" y="230.85" width="625.73" height="60" transform="translate(274.78 635.51) rotate(-135)"/>
+      <text class="cls-2" transform="translate(90.3 94.4) rotate(45)"><tspan x="0" y="0">KEEP OUT KEEP OUT KEEP OUT KEEP OUT </tspan></text>
+    </g>
+  </g>
+</svg>

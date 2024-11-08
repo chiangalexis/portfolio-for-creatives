@@ -334,6 +334,7 @@ a:active {
 
 .hero-header {
   background-color: rgb(255, 255, 255, 0.5);
+  position: sticky;
 }
 
 .branding-navigation {
@@ -670,8 +671,22 @@ a:active {
 ███████ ██   ██ ██   ██  ██████  ██   ██ 
 */
 
-/* TODO: Customize your 404 Error Page */
-
+.error-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+}
+.error-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.door {
+  height: 30vh;
+}
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
 /*
