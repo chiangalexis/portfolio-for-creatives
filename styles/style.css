@@ -638,6 +638,7 @@ a.nav-link-primary:hover {
   flex-direction: column;
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
@@ -663,7 +664,12 @@ a.nav-link-primary:hover {
   width: 3rem;
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
-
+.hero-headline {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: #ffffff;
+}
 .hero-headline-wrapper {
   width: 100%;
   height: auto;
