@@ -147,10 +147,9 @@
   --color-bg-full-width: ;
   --color-bg-project-description: ;
   --color-bg-sidebar-project: ;
-  --color-bg-sidebar-work:;
+  --color-bg-sidebar-work: ;
   --color-gradient-hero: ;
   --color-gradient-project-details: ;
-  );
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -197,7 +196,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: url("../assets/branding-images/cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -655,7 +654,7 @@ a.nav-link-primary:hover {
 .nav-branding-item {
   padding: var(--padding-tiny);
 }
-.nav-bar-links{
+.nav-bar-links {
   display: flex;
   flex-direction: row;
 }
@@ -1088,7 +1087,7 @@ a.nav-link-primary:hover {
   width: 100%;
   margin-bottom: 2rem;
 }
-.project-banner{
+.project-banner {
   max-height: 40vh;
   overflow: hidden;
 }
