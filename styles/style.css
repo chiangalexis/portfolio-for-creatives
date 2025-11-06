@@ -144,16 +144,12 @@
   --color-nav-arrow-stroke: #da0000;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
-  --color-bg-full-width: #f5f5f5;
-  --color-bg-project-description: #f5f5f5;
-  --color-bg-sidebar-project: orangered;
-  --color-bg-sidebar-work: lemonchiffon;
-  --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
-  --color-gradient-project-details: linear-gradient(
-    -225deg,
-    #ff057c 0%,
-    #8d0b93 50%,
-    #321575 100%
+  --color-bg-full-width: ;
+  --color-bg-project-description: ;
+  --color-bg-sidebar-project: ;
+  --color-bg-sidebar-work:;
+  --color-gradient-hero: ;
+  --color-gradient-project-details: ;
   );
   /* Special Elements */
   --color-icon-heart: darkred;
@@ -659,7 +655,10 @@ a.nav-link-primary:hover {
 .nav-branding-item {
   padding: var(--padding-tiny);
 }
-
+.nav-bar-links{
+  display: flex;
+  flex-direction: row;
+}
 .nav-branding-logo {
   width: 3rem;
   /* TODO: Adjust the width of the logo on mobile devices here */
@@ -955,17 +954,17 @@ a.nav-link-primary:hover {
 /* Each component stacks vertically in mobile view                             */
 /* -------------------------------------------------------------------------- */
 
-.footer-tagline {
+.footer-sitemap {
   grid-column: 1 / 2; /* Full width (single column) */
   grid-row: 1 / 2;
 }
-.footer-highlights {
+.footer-info {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 .footer-contact-social {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 /* -------------------------------------------------------------------------- */
 /* 🌊 FULL-WIDTH BOTTOM SECTION                                               */
@@ -992,6 +991,9 @@ a.nav-link-primary:hover {
 }
 .footer-socials-list {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1086,7 +1088,10 @@ a.nav-link-primary:hover {
   width: 100%;
   margin-bottom: 2rem;
 }
-
+.project-banner{
+  max-height: 40vh;
+  overflow: hidden;
+}
 /* Sidebar Styles */
 .project-aside {
   width: 100%;
@@ -1488,6 +1493,7 @@ to keep your styles reusable and consistent.
   .about-grid-image {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    max-height: 65vh;
   }
   .about-grid-text {
     grid-row: 1 / 2;
@@ -1503,25 +1509,26 @@ to keep your styles reusable and consistent.
     padding-right: var(--padding-jumbo);
     padding-bottom: 0;
     padding-left: var(--padding-jumbo);
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: 1fr 1fr;
   }
 
   /* Column 1: Tagline/Message */
-  .footer-tagline {
+  .footer-sitemap {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
   /* Column 2: Awards & Works */
-  .footer-highlights {
+  .footer-info {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
 
-  /* Column 3: Contact & Social */
+  /* Row 2: Contact & Social */
   .footer-contact-social {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+    grid-column: 1/ 4;
   }
 
   /* ------------------------------- */

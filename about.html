@@ -11,7 +11,7 @@
     <link
       rel="icon"
       type="images/svg+xml"
-      href="assets/branding-images/favicon.svg"
+      href="assets/branding-images/favicon.png"
     />
     <link
       rel="icon"
@@ -36,21 +36,39 @@
   <body class="about-page">
     <header class="hero-header">
       <ul class="nav-branding">
-        <li><a href="work.html" class="custom-navigation">Work</a></li>
         <li class="nav-branding-logo">
-          <a href="index.html"><img src="assets/branding-images/logo.svg" /></a>
+          <a href="index.html">
+            <img
+              src="assets/branding-images/Logo-no-border.png"
+              alt="Your portfolio logo"
+            />
+          </a>
         </li>
-        <li><a href="about.html" class="custom-navigation">About</a></li>
+        <div class="nav-bar-links">
+          <li class="nav-branding-item">
+            <a href="#main-work-section" class="nav-link-primary">Work</a>
+          </li>
+          <li class="nav-branding-item">
+            <a href="play.html" class="nav-link-primary">Play</a>
+          </li>
+          <li class="nav-branding-item">
+            <a href="photography.html" class="nav-link-primary">Photography</a>
+          </li>
+          <li class="nav-branding-item">
+            <a href="about.html" class="nav-link-primary">About</a>
+          </li>
+          <li class="nav-branding-item">
+            <a href="#footer-global">Contact</a>
+          </li>
+        </div>
       </ul>
     </header>
     <ul class="about-grid">
       <li class="about-grid-image">
         <figure class="about-image">
           <img
-            src="assets/about/self-portrait.svg"
-            width="1500"
-            height="1500"
-            alt="Your Photo"
+            src="assets/about/alexis-portrait-2022.jpg"
+            alt="A picture of Alexis on the bus with headphones on"
           />
         </figure>
       </li>
@@ -68,50 +86,63 @@
           Alexis’ inbox will always have a space for your inquiries, and she
           will get back to you as soon as she can.
         </p>
+        <a href="resume link" download>Download my resume here</a>
+
+        <h3>Recognition</h3>
+        <p>Dean's list</p>
+        <p>RGD Honourable Mention 2025 for Retail Design</p>
+        <h3>Volunteer Work</h3>
+        <p>Zine Workshop at Carnegie Community Centre, May 2025</p>
       </li>
     </ul>
-    <ul class="footer-global">
-      <li class="footer-tagline">
-        <h2>Let's Connect!</h2>
-        <p>
-          Feel free to reach out with any questions, collaborations, or just to
-          chat about design.
-        </p>
+    <ul class="footer-global" id="footer-global">
+      <li class="footer-sitemap">
+        <h2>Sitemap</h2>
+        <ul class="footer-list">
+          <li class="footer-item">About Alexis</li>
+          <li class="footer-item">Student Projects</li>
+          <li class="footer-item">Passion Projects</li>
+          <li class="footer-item">Filmography</li>
+          <li class="footer-item">Photography</li>
+          <li class="footer-item">Play</li>
+        </ul>
       </li>
 
-      <li class="footer-highlights">
-        <h2>Awards & Recognition</h2>
-        <ul class="footer-awards-list">
-          <li class="footer-item">
-            <a href="#">Dean’s List – Year or Term</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Your Award – Name of Student Award and Year</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Honourable Mention – Project or Competition Name</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Other Recognition or Accolade</a>
-          </li>
-        </ul>
+      <li class="footer-info">
+        <h2>Info</h2>
+        <p>Based in Vancouver, BC</p>
+        <p>Born, raised and still connected to the sunny island of Singapore</p>
       </li>
 
       <li class="footer-contact-social">
-        <h2>Contact & Social</h2>
+        <h2>Contact &amp; Social</h2>
         <ul class="footer-socials-list">
-          <li class="footer-item"><a href="#">Insta</a></li>
-          <li class="footer-item"><a href="#">LinkedIn</a></li>
-          <li class="footer-item"><a href="#">Behance</a></li>
+          <li class="footer-item">
+            <a href="mailto:chiangjietong@gmail.com">chiangjietong@gmail.com</a>
+          </li>
+
+          <li class="footer-item">
+            <a href="https://www.linkedin.com/in/chiangalexis/" target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.behance.net/alexis_chiang" target="_blank"
+              ><i class="fa-brands fa-square-behance fa-2xl"></i
+            ></a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.instagram.com/chiang.alexis/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+          </li>
         </ul>
       </li>
-
       <li class="footer-full-width">
         <p><a href="#top">Smooth scroll to the top</a></p>
         <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
-          <span class="heart">❤</span>
-          by James Neufeld.
+          &copy; <span id="copyright-years">2024–</span>. Crafted with intention
+          by Alexis Chiang
         </p>
         <script>
           document.getElementById("copyright-years").textContent +=
