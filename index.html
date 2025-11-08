@@ -1,10 +1,12 @@
+<!-- Hey friend! You've found a little Easter egg! -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Alexis Chiang</title>
     <meta
       name="Alexis Chiang's Creative Portfolio and website"
-      content="Alexis Chiang is an ambitious upcoming graphic and UX/UI designer. She loves challenging herself, powered by her passion for innovative storytelling. Growing up in the sunny island of Singapore, her background influences her design choices. Emerging into the design field with a filmmaking diploma, she composes the world through her precise lens."
+      content="Alexis Chiang is an ambitious graphic and UX/UI designer. Graduated from the School of Design, IDEA at Capilano University, she loves challenging herself, powered by her passion for innovative storytelling. Growing up in the sunny island of Singapore, her background influences her design choices offers a different perspective to a design problem. Emerging into the design field with a filmmaking diploma, she composes the world through her precise lens."
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,6 +45,7 @@
       style="
         background-image: url(assets/hero/Personal-Website-Hero-Animation.gif);
       "
+      alt="This is a looping GIF of a showcase of Alexis' work."
     >
       <header class="hero-header">
         <ul class="nav-branding">
@@ -50,7 +53,7 @@
             <a href="index.html">
               <img
                 src="assets/branding-images/Logo-no-border.png"
-                alt="Your portfolio logo"
+                alt="Alexis Chiang Logo, composed of triangles forming a capital A."
               />
             </a>
           </li>
@@ -71,9 +74,6 @@
             <li class="nav-branding-item">
               <a href="about.html" class="nav-link-primary">About</a>
             </li>
-            <li class="nav-branding-item">
-              <a href="#footer-global">Contact</a>
-            </li>
           </div>
         </ul>
       </header>
@@ -81,25 +81,28 @@
         <h1 class="hero-headline">Hi, I'm Alexis Chiang, and I do</h1>
       </div>
     </section>
+    <h1 class="section-header">Projects</h1>
     <div class="filter-buttons">
-      <div id="myBtnContainer">
+      <h3>Filters</h3>
+      <div class="btn-container">
         <button class="btn active" onclick="filterSelection('all')">
           All Projects
         </button>
-        <button class="btn" onclick="filterSelection('graphicdesign')">
-          Graphic Design
+        <button class="btn" onclick="filterSelection('motiondesign')">
+          Motion Design
         </button>
-        <button class="btn" onclick="filterSelection('webdesign')">
-          Web Design
+        <button class="btn" onclick="filterSelection('socialmedia')">
+          Social Media
         </button>
-        <button class="btn" onclick="filterSelection('app')">App</button>
-        <button class="btn" onclick="filterSelection('uxresearch')">
-          UX&amp;Research
+        <button class="btn" onclick="filterSelection('webappdesign')">
+          Web & App Design
+        </button>
+        <button class="btn" onclick="filterSelection('branddesign')">
+          Brand Design
         </button>
         <button class="btn" onclick="filterSelection('typography')">
           Typography
         </button>
-        <button class="btn" onclick="filterSelection('print')">Print</button>
         <button class="btn" onclick="filterSelection('experiential')">
           Experiential
         </button>
@@ -107,7 +110,7 @@
           Filmography
         </button>
       </div>
-      <div id="myBtnContainer">
+      <div class="btn-container">
         <button class="btn" onclick="filterSelection('client')">
           Client Projects
         </button>
@@ -123,36 +126,35 @@
       <section class="portfolio">
         <ul class="grid">
           <li class="work-page-grid-item">
-            <figure>
-              <img
-                src="assets/temp/image-placeholder.png"
-                width="1920"
-                height="1080"
-                class="rounded-large"
-                loading="lazy"
-                alt="Describe your project"
-              />
-            </figure>
-            <a href="project-1.html">
-              <div
-                class="project-details-overlay overlay rounded-large centered-text"
-              >
-                <h1 class="work-grid-project-title">Capstone</h1>
-                <h4 class="work-grid-project-category">
-                  App | UX&amp;UI | Packaging
-                </h4>
-              </div>
+            <img
+              src="assets/hero/nest-logo.jpg"
+              width="1920"
+              height="1080"
+              class="rounded-large"
+              loading="lazy"
+              alt="Nest is an app UX &amp; UI, and packaging solution that assists parents especially of those with young children to collect their photos, videos, audio files and journal entries to pass to their children when they become of age, much like a time capsule of memories."
+            />
+
+            <a href="project-1.html"
+            <div 
+            class="project-details-overlay overlay rounded-large centered-text"
+></div>
+              ><h2 class="work-grid-project-title">Nest — Capstone</h2>
+              <h4 class="work-grid-project-category">
+                App | UX&amp;UI | Packaging
+              </h4>
+              <h4 class="work-grid-project-category">Student Project</h4>
             </a>
           </li>
           <li class="work-page-grid-item">
             <figure>
               <img
-                src="assets/temp/image-placeholder.png"
+                src="assets/hero/PARAGON-SQUARE-COVER.jpg"
                 width="1920"
                 height="1080"
                 class="rounded-large"
                 loading="lazy"
-                alt="Describe your project"
+                alt="Paragon Workwear is a branding, graphic and web design student project that looks into sustainability of clothing material for people in trade."
               />
             </figure>
             <a href="project-2.html">
@@ -160,21 +162,20 @@
                 class="project-details-overlay overlay rounded-large centered-text"
               >
                 <h1 class="work-grid-project-title">Paragon Workwear</h1>
-                <h4 class="work-grid-project-category">
-                  Web design | UX&amp;UI
-                </h4>
+                <h4 class="work-grid-project-category">Web Design | UX&amp;UI</h4>
+                <h4 class="work-grid-project-category">Student Project</h4>
               </div>
             </a>
           </li>
           <li class="work-page-grid-item">
             <figure>
               <img
-                src="assets/temp/image-placeholder.png"
+                src="assets/hero/CHOMP-SQUARE-COVER.jpg"
                 width="1920"
                 height="1080"
                 class="rounded-large"
                 loading="lazy"
-                alt="Describe your project"
+                alt="Chomp is a meal maker app, student UX &amp; UI project that aims to equip recent graduates with culinary knowledge and build their confidence in the kitchen."
               />
             </figure>
             <a href="project-3.html">
@@ -182,66 +183,115 @@
                 class="project-details-overlay overlay rounded-large centered-text"
               >
                 <h1 class="work-grid-project-title">Chomp</h1>
-                <h4 class="work-grid-project-category">App | UX&amp;UI</h4>
+                <h4 class="work-grid-project-category">App Design | UX&amp;UI</h4>
+                <h4 class="work-grid-project-category">Student Project</h4>
               </div>
             </a>
           </li>
           <li class="work-page-grid-item">
             <figure>
               <img
-                src="assets/temp/image-placeholder.png"
+                src="assets/hero/MUSIC-FESTIVAL-SQUARE-COVER.jpg"
                 width="1920"
                 height="1080"
                 class="rounded-large"
                 loading="lazy"
-                alt="Describe your project"
+                alt="Music Festival is a student project that brands and markets a fictional Chinese indie music festival with a set of posters, social media campaign and augmented reality (AR) component, made with Adobe Aero."
               />
             </figure>
-            <a href="project-1.html">
+            <a href="project-4.html">
               <div
                 class="project-details-overlay overlay rounded-large centered-text"
               >
-                <h1 class="work-grid-project-title">Moon Festival Brochure</h1>
-                <h4 class="work-grid-project-category">Print | Typography</h4>
+                <h1 class="work-grid-project-title">Seeing, Hearing Music Festival</h1>
+                <h4 class="work-grid-project-category">Social Media | Typography | Experiential</h4>
+                <h4 class="work-grid-project-category">Student Project</h4>
               </div>
             </a>
           </li>
           <li class="work-page-grid-item">
             <figure>
               <img
-                src="assets/temp/image-placeholder.png"
+                src="assets/hero/LBP-SQUARE-COVER.jpg"
                 width="1920"
                 height="1080"
                 class="rounded-large"
                 loading="lazy"
-                alt="Background with geometric shapes floating"
+                alt="Leonid Boystov is a filmmaker and photographer based in Vancouver, BC. The client approached Jerry Kambashi and I to create a logo and website design that reflected his personality and style of work."
               />
             </figure>
-            <a href="project-1.html">
+            <a href="project-5.html">
               <div
                 class="project-details-overlay overlay rounded-large centered-text"
               >
                 <h1 class="work-grid-project-title">
                   Leonid Boystov Photography
                 </h1>
-                <h4 class="work-grid-project-category">Logo | Web Design</h4>
+                <h4 class="work-grid-project-category">Web Design | Brand Design</h4>
+                <h4 class="work-grid-project-category">Client Project</h4>
               </div>
             </a>
           </li>
           <li class="work-page-grid-item">
             <figure>
-              <object
-                type="image/svg+xml"
-                data="assets/temp/image-placeholder.png"
+              <img
+                src="assets/hero/REMEDY-SQUARE-COVER.jpg"
+                width="1920"
+                height="1080"
                 class="rounded-large"
-              ></object>
+                loading="lazy"
+                alt="Remedy is an app for adults with chronic conditions that considers a UX &amp; UI focused solution to improve and assist their everyday lives."
+              />
             </figure>
-            <a href="project-1.html">
+            <a href="project-6.html">
               <div
                 class="project-details-overlay overlay rounded-large centered-text"
               >
                 <h1 class="work-grid-project-title">Remedy</h1>
                 <h4 class="work-grid-project-category">App | UX&amp;UI</h4>
+                <h4 class="work-grid-project-category">Student Project</h4>
+              </div>
+            </a>
+          </li>
+          <li class="work-page-grid-item">
+            <figure>
+              <img
+                src="assets/hero/VCC-SQUARE-COVER.jpg"
+                width="1920"
+                height="1080"
+                class="rounded-large"
+                loading="lazy"
+                alt="Young Adults & Community Centres is a student project that reimagines Vancouver Community Centre's branding, wayfinding design and website design to solve the problem where young adults are underutilising their community facilities and resources."
+              />
+            </figure>
+            <a href="project-7.html">
+              <div
+                class="project-details-overlay overlay rounded-large centered-text"
+              >
+                <h1 class="work-grid-project-title">Young Adults & Community Centres</h1>
+                <h4 class="work-grid-project-category">Web Design | UX & Research</h4>
+                <h4 class="work-grid-project-category">Student Project</h4>
+              </div>
+            </a>
+          </li>
+          <li class="work-page-grid-item">
+            <figure>
+              <img
+                src="assets/hero/NOSH-PIT-SQUARE-COVER.jpg"
+                width="1920"
+                height="1080"
+                class="rounded-large"
+                loading="lazy"
+                alt="Nosh Pit is a student project that aims to design branding, social media campaign, and interior design for fictional global convenient store to promote community interaction."
+              />
+            </figure>
+            <a href="project-8.html">
+              <div
+                class="project-details-overlay overlay rounded-large centered-text"
+              >
+                <h1 class="work-grid-project-title">Nosh Pit</h1>
+                <h4 class="work-grid-project-category">Social Media | Brand Design | Experiential  </h4>
+                <h4 class="work-grid-project-category">Student Project</h4>
               </div>
             </a>
           </li>
@@ -252,12 +302,15 @@
       <li class="footer-sitemap">
         <h2>Sitemap</h2>
         <ul class="footer-list">
-          <li class="footer-item">About Alexis</li>
-          <li class="footer-item">Student Projects</li>
-          <li class="footer-item">Passion Projects</li>
+          <li class="footer-item"><a href="about.html">About Alexis</a></li>
+          <li class="footer-item">
+            <a href="index.html#main-work-section">All Projects</a>
+          </li>
           <li class="footer-item">Filmography</li>
-          <li class="footer-item">Photography</li>
-          <li class="footer-item">Play</li>
+          <li class="footer-item">
+            <a href="photography.html">Photography</a>
+          </li>
+          <li class="footer-item"><a href="play.html">Play</a></li>
         </ul>
       </li>
 
