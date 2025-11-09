@@ -791,12 +791,8 @@ a.nav-link-primary:hover {
   align-items: center;
   padding: var(--padding-small);
 }
-.btn-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.btn {
+
+.filter-btn {
   min-width: auto;
   min-height: 3rem;
   font-family: ;
@@ -804,13 +800,14 @@ a.nav-link-primary:hover {
   border-radius: var(--radius-lg);
   padding: 1rem;
   background: none;
+  transition: all 0.3s ease;
 }
-.btn:hover {
+.filter-btn:hover {
   background-color: #da0000;
   color: #ffffff;
   transition-duration: 400ms;
 }
-.btn:focus {
+.filter-btn.active {
   background-color: #da0000;
   color: #ffffff;
 }
@@ -818,6 +815,10 @@ a.nav-link-primary:hover {
 /* Work wrapper (takes up available space) */
 .main-work-section {
   flex: 1;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Padding around work grid and project page */
@@ -1385,11 +1386,6 @@ to keep your styles reusable and consistent.
 
 @media (min-width: 768px) {
   /* TODO: Adjust  layout for tablets */
-  .btn {
-    max-height: fit-content;
-    max-width: fit-content;
-    font-size: 1rem;
-  }
 }
 /* Large devices (desktops, 992px and up) */
 

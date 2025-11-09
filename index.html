@@ -82,42 +82,41 @@
       </div>
     </section>
     <h1 class="section-header" id="work-anchor">Projects</h1>
-    <div class="filter-buttons">
-      <h3>Filters</h3>
-      <div class="btn-container">
-        <button class="btn active" onclick="filterSelection('all')">
+      <h3 class="section-header">Filters</h3>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">
           All Projects
         </button>
-        <button class="btn" onclick="filterSelection('motiondesign')">
+        <button class="filter-btn" data-filter="motiondesign">
           Motion Design
         </button>
-        <button class="btn" onclick="filterSelection('socialmedia')">
+        <button class="filter-btn" data-filter="socialmedia">
           Social Media
         </button>
-        <button class="btn" onclick="filterSelection('webappdesign')">
+        <button class="filter-btn" data-filter="webappdesign">
           Web & App Design
         </button>
-        <button class="btn" onclick="filterSelection('branddesign')">
+        <button class="filter-btn" data-filter="branddesign">
           Brand Design
         </button>
-        <button class="btn" onclick="filterSelection('typography')">
+        <button class="filter-btn" data-filter="typography">
           Typography
         </button>
-        <button class="btn" onclick="filterSelection('experiential')">
+        <button class="filter-btn" data-filter="experiential">
           Experiential
         </button>
-        <button class="btn" onclick="filterSelection('film')">
+        <button class="filter-btn" data-filter="film">
           Filmography
         </button>
       </div>
-      <div class="btn-container">
-        <button class="btn" onclick="filterSelection('client')">
+      <div class="filter-buttons">
+        <button class="filter-btn" data-filter="client">
           Client Projects
         </button>
-        <button class="btn" onclick="filterSelection('student')">
+        <button class="filter-btn" data-filter="student">
           Student Projects
         </button>
-        <button class="btn" onclick="filterSelection('passion')">
+        <button class="filter-btn" data-filter="passion">
           Passion Projects
         </button>
       </div>
@@ -125,7 +124,7 @@
     <main class="main-work-section">
       <section class="portfolio">
         <ul class="grid">
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item webappdesign branddesign student">
             <img
               src="assets/hero/nest-logo.jpg"
               width="1920"
@@ -146,7 +145,7 @@
               <h4 class="work-grid-project-category">Student Project</h4>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item webappdesign branddesign student">
             <figure>
               <img
                 src="assets/hero/PARAGON-SQUARE-COVER.jpg"
@@ -167,7 +166,7 @@
               </div>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item webappdesign branddesign student">
             <figure>
               <img
                 src="assets/hero/CHOMP-SQUARE-COVER.jpg"
@@ -188,7 +187,7 @@
               </div>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item motiondesign socialmedia typography experiential student">
             <figure>
               <img
                 src="assets/hero/MUSIC-FESTIVAL-SQUARE-COVER.jpg"
@@ -209,7 +208,7 @@
               </div>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item webappdesign branddesign typography client">
             <figure>
               <img
                 src="assets/hero/LBP-SQUARE-COVER.jpg"
@@ -232,7 +231,7 @@
               </div>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item webappdesign branddesign student">
             <figure>
               <img
                 src="assets/hero/REMEDY-SQUARE-COVER.jpg"
@@ -253,7 +252,7 @@
               </div>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item webappdesign branddesign experiential student">
             <figure>
               <img
                 src="assets/hero/VCC-SQUARE-COVER.jpg"
@@ -274,7 +273,7 @@
               </div>
             </a>
           </li>
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item motiondesign socialmedia branddesign student">
             <figure>
               <img
                 src="assets/hero/NOSH-PIT-SQUARE-COVER.jpg"
@@ -374,6 +373,7 @@
       };
 
       window.addEventListener("scroll", myScrollFunc);
-    </script>
+      </script>
+    <script src="js/javascript.js"></script>
   </body>
 </html>
