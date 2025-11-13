@@ -354,10 +354,13 @@ svg {
 
 /* The container holds the video and maintains a 16:9 aspect ratio */
 .project-video-container {
+  display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (because 9 ÷ 16 = 0.5625) */
+  padding-top: ; /* 16:9 Aspect Ratio (because 9 ÷ 16 = 0.5625) */
   margin-bottom: 1rem;
 }
 /* The iframe is absolutely positioned to fill the container */
@@ -370,7 +373,26 @@ svg {
   width: 100%;
   height: 100%;
 }
+.video-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: auto;
+  min-height: 3rem;
+  font-family: ;
+  border: 0.25rem solid #da0000;
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  background: none;
+  transition: all 0.3s ease;
+}
 
+.video-link:hover {
+  background-color: #da0000;
+  color: #ffffff;
+  transition-duration: 400ms;
+}
 /* ---------------------------------------- */
 /* 🧭 Responsive Navigation (Coming Soon)   */
 /* This section is in progress — you'll build a mobile-friendly nav bar here */
@@ -971,7 +993,9 @@ a.nav-link-primary:hover {
   grid-column: 1 / 2; /* Text spans the first column */
   grid-row: 2 / 3; /* Text spans the second row */
 }
-
+.resume-link {
+  margin-bottom: 1rem;
+}
 /* 
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -1139,6 +1163,8 @@ a.nav-link-primary:hover {
 .project-full-width {
   width: 100%;
   margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 .project-banner {
   max-height: 40vh;
@@ -1221,6 +1247,95 @@ a.nav-link-primary:hover {
 .arrow {
   padding: 0;
 }
+
+/* Filmography Carousels*/
+$duration = 450ms
+$tileWidth = 250px
+$tileHeight = ($tileWidth / (16/9))
+$iconSize = 50px
+$growFactor = 1.5 // 1.5 times the original size
+
+$moveLeft = -($tileWidth * ($growFactor - 1) / 2)
+$moveRight = $tileWidth * ($growFactor - 1)
+
+.contain
+  width: 100%
+
+.row
+  overflow: scroll
+  width: 100%
+
+.row__inner
+  transition: $duration transform
+  font-size: 0
+  white-space: nowrap
+  margin: ($tileHeight / 2) 0
+  padding-bottom: 10px // Account for OS X scroll bar
+
+.tile
+  position: relative
+  display: inline-block
+  width: $tileWidth
+  height: $tileHeight
+  margin-right: 10px
+  font-size: 20px
+  cursor: pointer
+  transition: $duration all
+  transform-origin: center left
+
+.tile__img
+  width: $tileWidth
+  height: $tileHeight
+  object-fit: cover
+
+.tile__details
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  top: 0
+  font-size: 10px
+  opacity: 0
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%)
+  transition: $duration opacity
+
+  &:after
+  &:before
+    content: ''
+    position absolute
+    top: 50%
+    left: 50%
+    display: black
+
+  &:after
+    margin-top: (-($iconSize / 2))
+    margin-left: (-($iconSize / 2))
+    width: $iconSize
+    height: $iconSize
+    border: 3px solid #ecf0f1
+    line-height: $iconSize
+    text-align: center
+    border-radius: 100%
+    background: rgba(0,0,0,0.5)
+    z-index: 1
+
+  &:before
+    content: '▶'
+    left: 0
+    width: 100%
+    font-size: 30px
+    margin-left: 7px
+    margin-top: -18px
+    text-align: center
+    z-index: 2
+
+  .tile:hover &
+    opacity: 1
+
+.tile__title
+  position absolute
+  bottom: 0
+  padding: 10px
 
 /*
 
