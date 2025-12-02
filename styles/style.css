@@ -393,6 +393,12 @@ svg {
   color: #ffffff;
   transition-duration: 400ms;
 }
+
+.video-link-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
 /* ---------------------------------------- */
 /* 🧭 Responsive Navigation (Coming Soon)   */
 /* This section is in progress — you'll build a mobile-friendly nav bar here */
@@ -1008,6 +1014,12 @@ a.nav-link-primary:hover {
 .about-grid-text {
   grid-column: 1 / 2; /* Text spans the first column */
   grid-row: 2 / 3; /* Text spans the second row */
+}
+
+.about-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
 }
 
 /* 
