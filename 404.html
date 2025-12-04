@@ -3,8 +3,8 @@
   <head>
     <title>Alexis Chiang | 404 Error Page</title>
     <meta
-      name="description"
-      content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
+      name="Error Page"
+      content="Sorry! The page you were looking for does not exist, or has been removed."
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,13 +41,13 @@
             <a href="index.html">
               <img
                 src="assets/branding-images/Logo-no-border.png"
-                alt="Your portfolio logo"
+                alt="Alexis Chiang Logo, composed of triangles forming a capital A."
               />
             </a>
           </li>
           <div class="nav-bar-links">
             <li class="nav-branding-item">
-              <a href="#main-work-section" class="nav-link-primary">Work</a>
+              <a href="index.html#work-anchor" class="nav-link-primary">Work</a>
             </li>
             <li class="nav-branding-item">
               <a href="play.html" class="nav-link-primary">Play</a>
@@ -60,82 +60,83 @@
             <li class="nav-branding-item">
               <a href="about.html" class="nav-link-primary">About</a>
             </li>
-            <li class="nav-branding-item">
-              <a href="#footer-global">Contact</a>
-            </li>
           </div>
         </ul>
       </header>
+
       <div class="error-headline-wrapper">
-        <a href="work.html">
-          <object
-            type="image/svg+xml"
-            data="assets/temp/boy-character-floating.svg"
-            class="error-page-animation"
-          ></object
-        ></a>
-        <h2 class="error-page-title error-404">404 File Not Found</h2>
-        <h3>Create a custom error page that matches your personal brand.</h3>
-        <p>
-          The best 404 pages have become an art in themselves. Clever 404 pages
-          almost act like 🐇 Easter eggs &mdash; hidden treats buried in a site
-          &mdash; and that feeling of having found something unique can overcome
-          the user's frustration of not getting to the page they wanted. See:
-          <a
-            href="https://www.creativebloq.com/web-design/best-404-pages-812505"
-          >
-            The best 404 pages for clever web design inspiration
-          </a>
-          and
-          <a
-            href="https://www.svgator.com/blog/404-page-error-animation-examples/"
-            >50+ 404 Page Error Animations to Aid Visitor Retention</a
-          >.
-        </p>
+        <img
+          src="assets/branding-images/logo-animation-404.gif"
+          class="error-page-animation"
+        />
+        <h1>Sorry!</h1>
+        <h3>
+          The page you were looking for does not exist, or has been removed.
+        </h3>
+        <a href="index.html"><button>Back to home</button></a>
       </div>
     </section>
-    <ul class="footer-global">
-      <li class="footer-tagline">
-        <h2>Let's Connect!</h2>
-        <p>
-          Feel free to reach out with any questions, collaborations, or just to
-          chat about design.
-        </p>
+
+    <ul class="footer-global" id="footer-global">
+      <li class="footer-sitemap">
+        <h2>Sitemap</h2>
+        <ul class="footer-list">
+          <li class="footer-item"><a href="about.html">About Alexis</a></li>
+          <li class="footer-item">
+            <a href="index.html#main-work-section">All Projects</a>
+          </li>
+          <li class="footer-item">
+            <a href="photography.html">Photography</a>
+          </li>
+          <li class="footer-item"><a href="play.html">Play</a></li>
+        </ul>
       </li>
 
-      <li class="footer-highlights">
-        <h2>Awards & Recognition</h2>
-        <ul class="footer-awards-list">
-          <li class="footer-item">
-            <a href="#">Dean’s List – Year or Term</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Your Award – Name of Student Award and Year</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Honourable Mention – Project or Competition Name</a>
-          </li>
-          <li class="footer-item">
-            <a href="#">Other Recognition or Accolade</a>
-          </li>
-        </ul>
+      <li class="footer-info">
+        <h2>Info</h2>
+        <p>Based in Vancouver, BC</p>
+        <p>Born and raised in Singapore</p>
       </li>
 
       <li class="footer-contact-social">
-        <h2>Contact & Social</h2>
+        <h2>Contact &amp; Social</h2>
         <ul class="footer-socials-list">
-          <li class="footer-item"><a href="#">Insta</a></li>
-          <li class="footer-item"><a href="#">LinkedIn</a></li>
-          <li class="footer-item"><a href="#">Behance</a></li>
+          <li class="footer-item">
+            <a href="mailto:chiangjietong@gmail.com" alt="Email link"
+              >chiangjietong@gmail.com</a
+            >
+          </li>
+
+          <li class="footer-item">
+            <a
+              href="https://www.linkedin.com/in/chiangalexis/"
+              target="_blank"
+              alt="LinkedIn"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li class="footer-item">
+            <a
+              href="https://www.behance.net/alexis_chiang"
+              target="_blank"
+              alt="Behance"
+              ><i class="fa-brands fa-square-behance fa-2xl"></i
+            ></a>
+          </li>
+          <li class="footer-item">
+            <a
+              href="https://www.instagram.com/chiang.alexis/"
+              target="_blank"
+              alt="Instagram"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+          </li>
         </ul>
       </li>
-
       <li class="footer-full-width">
-        <p><a href="#top">Smooth scroll to the top</a></p>
         <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2020-</span>. Hand crafted with
-          <span class="heart">❤</span>
-          by James Neufeld.
+          &copy; <span id="copyright-years">2024–</span>. Crafted with intention
+          by Alexis Chiang
         </p>
         <script>
           document.getElementById("copyright-years").textContent +=

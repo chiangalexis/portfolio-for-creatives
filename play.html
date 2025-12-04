@@ -33,12 +33,13 @@
     />
     <link rel="stylesheet" href="./styles/masonry.css" />
     <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body class="play-page">
     <section class="hero">
-       <header class="hero-header">
+      <header class="hero-header">
         <ul class="nav-branding">
           <li class="nav-branding-logo">
             <a href="index.html">
@@ -50,9 +51,7 @@
           </li>
           <div class="nav-bar-links">
             <li class="nav-branding-item">
-              <a href="index.html#work-anchor" class="nav-link-primary"
-                >Work</a
-              >
+              <a href="index.html#work-anchor" class="nav-link-primary">Work</a>
             </li>
             <li class="nav-branding-item">
               <a href="play.html" class="nav-link-primary">Play</a>
@@ -68,6 +67,7 @@
           </div>
         </ul>
       </header>
+
       <div class="hero-headline-wrapper">
         <h1 class="hero-headline">Playground</h1>
       </div>
@@ -75,7 +75,7 @@
     <main class="main-work-section">
       <section class="portfolio">
         <ul class="play-grid">
-          <li class="work-page-grid-item">
+          <li class="work-page-grid-item" id="myBtn">
             <img
               src="assets/play/alexis-chiang-blender.jpg"
               width="1920"
@@ -83,12 +83,16 @@
               class="rounded-large"
               loading="lazy"
               alt="A Figma microsite prototype with a loading screen of a pourover coffee modelled and animated on 3D software Blender."
-            /><a href="                "
-            <div class="project-details-overlay overlay rounded-large centered-text"></div><h2 class="work-grid-project-title">blenderbeans — Blender Microsite</h2>
-              <h4 class="work-grid-project-category">
-                3D Modelling | Animation | Web Design
-              </h4>
-            </a>
+            />
+            <div
+              class="project-details-overlay overlay rounded-large centered-text"
+            ></div>
+            <h2 class="work-grid-project-title">
+              blenderbeans — Blender Microsite
+            </h2>
+            <h4 class="work-grid-project-category">
+              3D Modelling | Animation | Web Design
+            </h4>
           </li>
 
           <li class="work-page-grid-item">
@@ -99,18 +103,39 @@
               class="rounded-large"
               loading="lazy"
               alt="PAL Seaplane is a fictional annual report inspired by the video game series 'Animal Crossing' which imagines what an annual report might have looked like for an airline company."
-            /><a href="                "
-            <div class="project-details-overlay overlay rounded-large centered-text"></div><h2 class="work-grid-project-title">Annual Report</h2>
-              <h4 class="work-grid-project-category">
-                Print
-              </h4>
-            </a>
+            />
+            <div
+              class="project-details-overlay overlay rounded-large centered-text"
+            ></div>
+            <h2 class="work-grid-project-title">Annual Report</h2>
+            <h4 class="work-grid-project-category">Print</h4>
           </li>
         </ul>
       </section>
     </main>
 
-   <ul class="footer-global" id="footer-global">
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-left">
+          <h1>blenderbeans</h1>
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="450"
+            src="https://embed.figma.com/proto/GxM1WnhYxS1t0cdv31euu3/Alexis-Chiang-Blender-Workshop?page-id=0%3A1&node-id=1-4&viewport=72%2C513%2C0.18&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A4&embed-host=share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p>
+          A 3D modelling practice that is presented in the form of a microsite.
+          As you scroll you see my working process on the Figma prototype
+          website.
+        </p>
+      </div>
+    </div>
+
+    <ul class="footer-global" id="footer-global">
       <li class="footer-sitemap">
         <h2>Sitemap</h2>
         <ul class="footer-list">
@@ -171,12 +196,14 @@
           &copy; <span id="copyright-years">2024–</span>. Crafted with intention
           by Alexis Chiang
         </p>
+
         <script>
           document.getElementById("copyright-years").textContent +=
             new Date().getFullYear();
         </script>
       </li>
     </ul>
+    <script src="./js/modal.js"></script>
     <script src="./lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>

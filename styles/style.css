@@ -507,6 +507,8 @@ button {
 
 button:hover {
   transition: 500ms;
+  background-color: var(--color-accent-primary);
+  color:#ffffff;
 }
 
 /* ------------------------------------------------------------------ */
@@ -677,9 +679,16 @@ a.nav-link-primary:hover {
   height: auto; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
+}
+.landing-hero {
+  width: 100%;
+  height: 100vh; /* Takes up most of the screen height */
+  display: flex;
+  flex-direction: column;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-size: cover
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
@@ -719,6 +728,29 @@ a.nav-link-primary:hover {
   flex-wrap: wrap;
 }
 
+.landing-hero-wrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  padding: 2rem;
+}
+
+.hero-button{
+  display: flex;
+  margin: var(--padding-medium) var(--padding-small);
+  background-color: #da0000;
+  color: white;
+}
+
+.hero-button:hover {
+  background-color: white;
+  color: #da0000;
+}
+
 .hero-icon {
   font-size: 4rem;
 }
@@ -742,7 +774,6 @@ a.nav-link-primary:hover {
   font-family: var(--font-family-heading);
   font-size: xx-large;
   color: #da0000;
-  margin: 10px;
 }
 
 /*
@@ -899,6 +930,7 @@ a.nav-link-primary:hover {
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
 
+
 /* Individual Work Grid Item */
 .work-page-grid-item,
 .overlay-container {
@@ -1039,11 +1071,16 @@ a.nav-link-primary:hover {
 
 .footer-global {
   display: grid;
+  justify-self: center;
+  align-self: center;
   grid-template-columns: 1fr; /* Single column layout */
   grid-gap: ; /* Consistent spacing between sections */
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
+  border-top: solid #ffc5c5;
+  margin: 1rem;
+  width: 98%;
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
 
@@ -1081,13 +1118,13 @@ a.nav-link-primary:hover {
 /* 📜 Reusable footer list styles */
 /* ------------------------------- */
 .footer-list {
-  margin-bottom: ;
+  margin-bottom: 1rem;
 }
 .footer-awards-list {
-  margin-bottom: ;
+  margin-bottom: 1rem;
 }
 .footer-works-list {
-  margin-bottom: ;
+  margin-bottom: 1rem ;
 }
 .footer-socials-list {
   display: flex;
@@ -1096,6 +1133,7 @@ a.nav-link-primary:hover {
   flex-wrap: wrap;
   justify-content: left;
   align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -1376,8 +1414,12 @@ a.nav-link-primary:hover {
 }
 
 .error-page-animation {
-  width: 25rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 /*
 
